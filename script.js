@@ -3,6 +3,7 @@ let submit = document.querySelector("#submit");
 let row = document.querySelector("#row");
 let infoShow = document.querySelector("#info");
 let briefInfo = document.querySelector("#briefInfo");
+let imgIconInPage = document.querySelector("#imgIcon");
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -20,6 +21,8 @@ submit.addEventListener("click", (e) => {
       }
     })
     .then((data) => {
+      imgIconInPage.classList.add("hidden");
+
       let totalResultArray = [];
       infoShow.innerHTML = search.value;
       for (let value in data) {
