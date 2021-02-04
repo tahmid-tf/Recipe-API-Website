@@ -28,7 +28,7 @@ submit.addEventListener("click", (e) => {
           let values = data[value][val];
           totalResultArray.push(data[value][val]);
           let html = `<div class="col-md-3 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" href="${
+                        <a class="portfolio-link" style="text-align: center" href="${
                           values.source_url
                         }" target="blank">
                             <div class="portfolio-hover">
@@ -39,6 +39,7 @@ submit.addEventListener("click", (e) => {
                             <img
                             class="img-fluid"
                             src="${values.image_url}"
+                            style="margin : display: block; margin: auto"
                             alt=""
                             />
                         </a>
