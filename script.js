@@ -45,7 +45,7 @@ submit.addEventListener("click", (e) => {
                             // style="display: block; margin: auto"
                             // alt=""
                             // />
-                            <img src="img/portfolio/1021460.png" alt="" />
+                            <img src="https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <h5>${values.title}</h5><br>
