@@ -31,29 +31,25 @@ submit.addEventListener("click", (e) => {
           let values = data[value][val];
           totalResultArray.push(data[value][val]);
           let html = `<div class="col-md-3 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" style="text-align: center" href="${
-                          values.source_url
-                        }" target="blank">
-                            <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                            </div>
+                           
                             <img
                             class="img-fluid"
                             src="${values.image_url}"
                             style="display: block; margin: auto"
-                            alt="Image not supported in this browser"
+                            alt="Image not supported in this browser,switch to google chrome"
                             />
-                        </a>
+                        
                         <div class="portfolio-caption">
                             <h5>${values.title}</h5><br>
                             <p>${values.publisher}</p>
                             <p class="text-muted">Social rank - ${Math.trunc(
                               values.social_rank
                             )}%</p>
+                            <a href="${
+                              values.source_url
+                            }" target="blank"><button class='click'>Click Here</button></a>
                         </div>
-                        </div>`;
+                      </div>`;
           briefInfo.innerHTML = `Showing all results related to '${search.value}'<br>(${totalResultArray.length} results found)`;
           row.insertAdjacentHTML("afterbegin", html);
         }
