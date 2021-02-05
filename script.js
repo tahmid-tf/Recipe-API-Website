@@ -42,7 +42,7 @@ submit.addEventListener("click", (e) => {
                             <img
                             class="img-fluid"
                             src="${values.image_url}"
-                            style="margin : display: block; margin: auto"
+                            style="display: block; margin: auto"
                             alt=""
                             />
                         </a>
