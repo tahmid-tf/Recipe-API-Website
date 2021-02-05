@@ -39,12 +39,13 @@ submit.addEventListener("click", (e) => {
                                 <i class="fas fa-plus fa-3x"></i>
                             </div>
                             </div>
-                            <img
-                            class="img-fluid"
-                            src="${values.image_url}"
-                            style="display: block; margin: auto"
-                            alt=""
-                            />
+                            // <img
+                            // class="img-fluid"
+                            // src="${values.image_url}"
+                            // style="display: block; margin: auto"
+                            // alt=""
+                            // />
+                            <img src="img/portfolio/1021460.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <h5>${values.title}</h5><br>
